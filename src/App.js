@@ -1,14 +1,21 @@
 import React from 'react';
-import Home from './pages/Home';
-import Admin from './pages/Admin';
-import './App.css';
-
+import { createBrowserHistory } from 'history';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
+
+import Home from './pages/Home';
+import Admin from './pages/Admin';
+import './App.css';
+
+const history = createBrowserHistory();
+
+const path = (/#!(\/.*)$/.exec(window.location.hash) || [])[1];
+if (path) {
+  history.replace(path);
+}
 
 function App() {
   return (
