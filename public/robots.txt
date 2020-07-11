@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin
+
+# CONGRATULATIONS! You found the first easter egg in our scavenger hunt!
+# As a penetration tester, the first thing I want to know about your website/application is what you don’t want Google to know.
+# Do you notice a page in the "Disallow" block above? It's not linked from anywhere on the website, so you wouldn't have found it 
+# if the developer of this website hadn't mentioned it in this file!
+#
+# Go take a look at that page for your next clue!
