@@ -5,7 +5,7 @@ const Home = () => (
         <h1>Cyber Scavenger Hunt</h1>
 
         <p>
-            Welcome to step one of this 10-step scavenger hunt!
+            Welcome to step one of this 8-step scavenger hunt!
         </p>
 
         <p>
