@@ -1,30 +1,87 @@
 import React from 'react';
+import About from './About';
 
 const Home = () => (
-    <div>
-        <h1>Cyber Scavenger Hunt</h1>
+    <div className="card mx-auto mt-2" style={{ width: '500px' }}>
+        <div className="card-body">
+            <h1 className="card-title">
+                Cyber Scavenger Hunt
+                <i class="fa fa-question-circle text-right aboutModal" data-toggle="modal" data-target="#aboutModal" />
+            </h1>
 
-        <p>
-            Welcome to step one of this 8-step scavenger hunt!
-        </p>
+            <h6 className="card-subtitle mb-2 text-muted">
+                Welcome to step one of this 8-step scavenger hunt!
+            </h6>
 
-        <p>
-            Reconnassaince against a web application begins with the text on the website itself.
-            The better you understand the company, and who the developers behind the code are...
-            the better the conclusions you can infer.
-        </p>
+            <p className="card-text">
+                Reconnassaince against a web application begins with the text on the website itself.
+                The better you understand the company, and who the developers behind the code are...
+                the better the conclusions you can infer.
+            </p>
 
-        <p>
-            Hint #1: If I were a search engine, I'd look here to make sure I don't index any content I'm not supposed to.
-        </p>
+            <button
+                class="btn btn-primary m-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#hint1"
+                aria-expanded="false"
+                aria-controls="hint1"
+            >
+                Hint #1
+            </button>
 
-        <p>
-            Hint #2: Robots...
-        </p>
+            <button
+                class="btn btn-primary m-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#hint2"
+                aria-expanded="false"
+                aria-controls="hint2"
+            >
+                Hint #2
+            </button>
 
-        <p>
-            Hint #3: Most websites have a <a href="/robots.txt">robots.txt</a> file. Take a look to see what's in there!
-        </p>
+            <button
+                class="btn btn-primary m-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#hint3"
+                aria-expanded="false"
+                aria-controls="hint3"
+            >
+                Hint #3
+            </button>
+
+            <div class="collapse" id="hint1">
+                <div class="card card-body m-3">
+                    <h4 className="card-title">Hint #1</h4>
+
+                    <p className="card-text">
+                        If I were a search engine, I'd look here to make sure I don't index any content I'm not supposed to.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse" id="hint2">
+                <div class="card card-body m-3">
+                    <h4 className="card-title">Hint #2</h4>
+
+                    <img src="/robots-meme.jpg" alt="robots.txt - I'm a sign, not a cop!" />
+                </div>
+            </div>
+
+            <div class="collapse" id="hint3">
+                <div class="card card-body m-3">
+                    <h4 className="card-title">Hint #3</h4>
+
+                    <p className="card-text">
+                        Most websites have a <a href="/robots.txt">robots.txt</a> file. Take a look to see what's in there!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <About />
     </div>
 );
 
