@@ -146,19 +146,29 @@ class Admin extends React.Component {
                     </h1>
 
                     <h6 className="card-subtitle mb-2 text-muted">
-                        CONGRATULATIONS! You found the 4th of 8 easter eggs in our scavenger hunt!
+                        CONGRATULATIONS!
+                    </h6>
+
+                    <h6 className="card-subtitle mb-2 text-muted">
+                        You found the 4th of 8 easter eggs in our scavenger hunt!
                     </h6>
 
                     <p>
-                        The query string params...
+                        Query string params are one of the most common ways in which a web
+                        application can be exploited.
                     </p>
 
                     <p>
-                        Also known as priviledge escalation...
+                        In this case, we have executed an exploit generally known as
+                        "priviledge escalation" -- meaning we were able to trick the
+                        application into thinking we have permissions (and the application
+                        never double-checks).
                     </p>
 
                     <p>
-                        From here you'll be able to see <a href="/hidden.html">other pages</a> in the application you hadn't known about.
+                        Once an attacker escalates their priviledges, they'll immediately begin
+                        looking for <a href="/hidden.html">other pages</a> in
+                        the application they hadn't known about.
                     </p>
                 </div>
             </div>

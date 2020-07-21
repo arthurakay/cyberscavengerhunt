@@ -75,7 +75,7 @@ const Home = () => (
                     <h4 className="card-title">Hint #3</h4>
 
                     <p className="card-text">
-                        Most websites have a <a href="/robots.txt" rel="noopener noreferrer">robots.txt</a> file. Take a look to see what's in there!
+                        Most websites have a <a href="/robots.txt">robots.txt</a> file. Take a look to see what's in there!
                     </p>
                 </div>
             </div>

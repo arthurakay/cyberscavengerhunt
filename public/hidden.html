@@ -3,30 +3,93 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="You found a hidden page!" />
 
     <title>Cyber Scavenger Hunt</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/2a62b4f3e3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="root">
-        <h1>Another Hidden Page!</h1>
+    <div class="card mx-auto mt-2" style="width: 500px;">
+        <div class="card-body">
+            <h1 class="card-title">
+                Another Hidden Page!
+            </h1>
 
-        <p>
-            CONGRATULATIONS! You found the 5th of 8 easter eggs in our scavenger hunt!
-        </p>
+            <h6 class="card-subtitle mb-2 text-muted">
+                CONGRATULATIONS!
+            </h6>
 
-        <p>
-            Once again, we find that web developers can be very careless. Web applications
-            often fail to properly authenticate and authorize users...
-        </p>
+            <h6 class="card-subtitle mb-2 text-muted">
+                You found the 5th of 8 easter eggs in our scavenger hunt!
+            </h6>
 
-        <p>
-            If you still have your DevTools open, check out the HTTP headers...
-        </p>
+            <p class="card-text">
+                Once again, we find that web developers can be very careless. Web applications
+                often fail to properly authenticate and authorize users... and as we saw
+                on the last page, that can leave your application wide-open to cyber attacks!
+            </p>
+
+            <p class="card-text">
+                If you still have your DevTools open, let's look for a few more easter eggs because
+                developers love to store sensitive data in plain sight!
+            </p>
+
+            <button class="btn btn-primary m-3" type="button" data-toggle="collapse" data-target="#hint1"
+                aria-expanded="false" aria-controls="hint1">
+                Hint #1
+            </button>
+
+            <button class="btn btn-primary m-3" type="button" data-toggle="collapse" data-target="#hint2"
+                aria-expanded="false" aria-controls="hint2">
+                Hint #2
+            </button>
+
+            <button class="btn btn-primary m-3" type="button" data-toggle="collapse" data-target="#hint3"
+                aria-expanded="false" aria-controls="hint3">
+                Hint #3
+            </button>
+
+            <div class="collapse" id="hint1">
+                <div class="card card-body m-3">
+                    <h4 class="card-title">Hint #1</h4>
+
+                    <p class="card-text">
+                        Do numbers like 200, 301, 404 or 500 mean anything to you?
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse" id="hint2">
+                <div class="card card-body m-3">
+                    <h4 class="card-title">Hint #2</h4>
+
+                    <p class="card-text">
+                        Web servers often return a ton of data that's not in the message body.
+                    </p>
+
+                    <p class="card-text">
+                        Look for the "Network" tab in your DevTools and look closely at each request!
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse" id="hint3">
+                <div class="card card-body m-3">
+                    <h4 class="card-title">Hint #3</h4>
+
+                    <p class="card-text">
+                        <img src="/egg6-headers.png" alt="Is this scavenger hunt making your HEADER hurt yet?" />
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -55,7 +118,15 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="/scripts.js"></script>
 </body>
 
