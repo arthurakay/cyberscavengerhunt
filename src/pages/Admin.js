@@ -30,57 +30,137 @@ class Admin extends React.Component {
 
     easterEgg2() {
         return (
-            <div>
-                <h1>Admin Page?</h1>
+            <div className="card mx-auto mt-2" style={{ width: '500px' }}>
+                <div className="card-body">
+                    <h1 className="card-title">
+                        Admin Page?
+                    </h1>
 
-                <p>
-                    CONGRATULATIONS! You found the 2nd of 8 easter eggs in our scavenger hunt!
-                </p>
+                    <h6 className="card-subtitle mb-2 text-muted">
+                        CONGRATULATIONS!
+                    </h6>
 
-                <p>
-                    It's a good thing this website doesn't actually have an open administrator's dashboard!
-                </p>
+                    <h6 className="card-subtitle mb-2 text-muted">
+                        You found the 2nd of 8 easter eggs in our scavenger hunt!
+                    </h6>
 
-                <p>
-                    The developer who wrote this app definitely didn't think anyone would look here,
-                    but that's why robots.txt can be such a problem for security.
-                </p>
+                    <p className="card-text">
+                        It's a good thing this website doesn't actually have an open administrator's dashboard!
+                    </p>
 
-                <p>
-                    Next thing I'd probably do is open my browser's DevTools (show image?) and see what I can find...
-                </p>
+                    <p className="card-text">
+                        The developer who wrote this app definitely didn't think anyone would look here,
+                        but that's why robots.txt can be such a problem for security.
+                    </p>
 
-                <p>
-                    Hint #1: How to open DevTools in the browser...
-                </p>
+                    <p className="card-text">
+                        Normally an attacker would spend a lot more time enumerating pages on the website...
+                        but this website doesn't have a whole lot more to it.
+                    </p>
 
-                <p>
-                    Hint #2: JS Console!
-                </p>
+                    <p className="card-text">
+                        The next thing an attacker would probably do is open their browser's DevTools
+                        and see what's in there...
+                    </p>
+
+                    <button
+                        class="btn btn-primary m-3"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#hint1"
+                        aria-expanded="false"
+                        aria-controls="hint1"
+                    >
+                        Hint #1
+                    </button>
+
+                    <button
+                        class="btn btn-primary m-3"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#hint2"
+                        aria-expanded="false"
+                        aria-controls="hint2"
+                    >
+                        Hint #2
+                    </button>
+
+                    <button
+                        class="btn btn-primary m-3"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#hint3"
+                        aria-expanded="false"
+                        aria-controls="hint3"
+                    >
+                        Hint #3
+                    </button>
+
+                    <div class="collapse" id="hint1">
+                        <div class="card card-body m-3">
+                            <h4 className="card-title">Hint #1</h4>
+
+                            <p className="card-text">
+                                Not familiar with your browser's DevTools? Try one of these links:
+                            </p>
+
+                            <ul>
+                                <li><a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank">DevTools in Google Chrome</a></li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">DevTools in Mozilla Firefox</a></li>
+                                <li><a href="https://developer.apple.com/safari/tools/" target="_blank">DevTools in Apple Safari</a></li>
+                                <li><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">DevTools in Microsoft Edge</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="hint2">
+                        <div class="card card-body m-3">
+                            <h4 className="card-title">Hint #2</h4>
+
+                            <p className="card-text">
+                                Once you have DevTools open in your browser, look for the JavaScript console...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="hint3">
+                        <div class="card card-body m-3">
+                            <h4 className="card-title">Hint #3</h4>
+
+                            <p className="card-text">
+                                <img src="/egg3-console.png" alt="Can you find the JS console?" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
 
     easterEgg4() {
         return (
-            <div>
-                <h1>Admin Page!!!</h1>
+            <div className="card mx-auto mt-2" style={{ width: '500px' }}>
+                <div className="card-body">
+                    <h1 className="card-title">
+                        Admin Page!!!
+                    </h1>
 
-                <p>
-                    CONGRATULATIONS! You found the 4th of 8 easter eggs in our scavenger hunt!
-                </p>
+                    <h6 className="card-subtitle mb-2 text-muted">
+                        CONGRATULATIONS! You found the 4th of 8 easter eggs in our scavenger hunt!
+                    </h6>
 
-                <p>
-                    The query string params...
-                </p>
+                    <p>
+                        The query string params...
+                    </p>
 
-                <p>
-                    Also known as priviledge escalation...
-                </p>
+                    <p>
+                        Also known as priviledge escalation...
+                    </p>
 
-                <p>
-                    From here you'll be able to see <a href="/hidden.html">other pages</a> in the application you hadn't known about.
-                </p>
+                    <p>
+                        From here you'll be able to see <a href="/hidden.html">other pages</a> in the application you hadn't known about.
+                    </p>
+                </div>
             </div>
         );
     }
