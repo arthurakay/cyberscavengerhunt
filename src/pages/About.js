@@ -18,7 +18,7 @@ const About = () => (
 
                     <p>
                         The project code is 100% open source
-                        and <a href="https://github.com/arthurakay/cyberscavengerhunt" target="_blank">available on GitHub</a>.
+                        and <a href="https://github.com/arthurakay/cyberscavengerhunt" target="_blank" rel="noopener noreferrer">available on GitHub</a>.
                         If you have any suggestions, questions, or are interested in helping support the project please let us know!
                     </p>
                 </div>

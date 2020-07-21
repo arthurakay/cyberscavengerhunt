@@ -6,7 +6,7 @@ const Home = () => (
         <div className="card-body">
             <h1 className="card-title">
                 Cyber Scavenger Hunt
-                <i class="fa fa-question-circle text-right aboutModal" data-toggle="modal" data-target="#aboutModal" />
+                <i className="fa fa-question-circle text-right aboutModal" data-toggle="modal" data-target="#aboutModal" />
             </h1>
 
             <h6 className="card-subtitle mb-2 text-muted">
@@ -20,7 +20,7 @@ const Home = () => (
             </p>
 
             <button
-                class="btn btn-primary m-3"
+                className="btn btn-primary m-3"
                 type="button"
                 data-toggle="collapse"
                 data-target="#hint1"
@@ -31,7 +31,7 @@ const Home = () => (
             </button>
 
             <button
-                class="btn btn-primary m-3"
+                className="btn btn-primary m-3"
                 type="button"
                 data-toggle="collapse"
                 data-target="#hint2"
@@ -42,7 +42,7 @@ const Home = () => (
             </button>
 
             <button
-                class="btn btn-primary m-3"
+                className="btn btn-primary m-3"
                 type="button"
                 data-toggle="collapse"
                 data-target="#hint3"
@@ -52,8 +52,8 @@ const Home = () => (
                 Hint #3
             </button>
 
-            <div class="collapse" id="hint1">
-                <div class="card card-body m-3">
+            <div className="collapse" id="hint1">
+                <div className="card card-body m-3">
                     <h4 className="card-title">Hint #1</h4>
 
                     <p className="card-text">
@@ -62,20 +62,20 @@ const Home = () => (
                 </div>
             </div>
 
-            <div class="collapse" id="hint2">
-                <div class="card card-body m-3">
+            <div className="collapse" id="hint2">
+                <div className="card card-body m-3">
                     <h4 className="card-title">Hint #2</h4>
 
                     <img src="/robots-meme.jpg" alt="robots.txt - I'm a sign, not a cop!" />
                 </div>
             </div>
 
-            <div class="collapse" id="hint3">
-                <div class="card card-body m-3">
+            <div className="collapse" id="hint3">
+                <div className="card card-body m-3">
                     <h4 className="card-title">Hint #3</h4>
 
                     <p className="card-text">
-                        Most websites have a <a href="/robots.txt">robots.txt</a> file. Take a look to see what's in there!
+                        Most websites have a <a href="/robots.txt" rel="noopener noreferrer">robots.txt</a> file. Take a look to see what's in there!
                     </p>
                 </div>
             </div>

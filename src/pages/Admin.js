@@ -64,7 +64,7 @@ class Admin extends React.Component {
                     </p>
 
                     <button
-                        class="btn btn-primary m-3"
+                        className="btn btn-primary m-3"
                         type="button"
                         data-toggle="collapse"
                         data-target="#hint1"
@@ -75,7 +75,7 @@ class Admin extends React.Component {
                     </button>
 
                     <button
-                        class="btn btn-primary m-3"
+                        className="btn btn-primary m-3"
                         type="button"
                         data-toggle="collapse"
                         data-target="#hint2"
@@ -86,7 +86,7 @@ class Admin extends React.Component {
                     </button>
 
                     <button
-                        class="btn btn-primary m-3"
+                        className="btn btn-primary m-3"
                         type="button"
                         data-toggle="collapse"
                         data-target="#hint3"
@@ -96,8 +96,8 @@ class Admin extends React.Component {
                         Hint #3
                     </button>
 
-                    <div class="collapse" id="hint1">
-                        <div class="card card-body m-3">
+                    <div className="collapse" id="hint1">
+                        <div className="card card-body m-3">
                             <h4 className="card-title">Hint #1</h4>
 
                             <p className="card-text">
@@ -105,16 +105,16 @@ class Admin extends React.Component {
                             </p>
 
                             <ul>
-                                <li><a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank">DevTools in Google Chrome</a></li>
-                                <li><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">DevTools in Mozilla Firefox</a></li>
-                                <li><a href="https://developer.apple.com/safari/tools/" target="_blank">DevTools in Apple Safari</a></li>
-                                <li><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">DevTools in Microsoft Edge</a></li>
+                                <li><a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank" rel="noopener noreferrer">DevTools in Google Chrome</a></li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank" rel="noopener noreferrer">DevTools in Mozilla Firefox</a></li>
+                                <li><a href="https://developer.apple.com/safari/tools/" target="_blank" rel="noopener noreferrer">DevTools in Apple Safari</a></li>
+                                <li><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank" rel="noopener noreferrer">DevTools in Microsoft Edge</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="collapse" id="hint2">
-                        <div class="card card-body m-3">
+                    <div className="collapse" id="hint2">
+                        <div className="card card-body m-3">
                             <h4 className="card-title">Hint #2</h4>
 
                             <p className="card-text">
@@ -123,8 +123,8 @@ class Admin extends React.Component {
                         </div>
                     </div>
 
-                    <div class="collapse" id="hint3">
-                        <div class="card card-body m-3">
+                    <div className="collapse" id="hint3">
+                        <div className="card card-body m-3">
                             <h4 className="card-title">Hint #3</h4>
 
                             <p className="card-text">
