@@ -160,7 +160,7 @@ class Admin extends React.Component {
 
                     <p>
                         In this case, we have executed an exploit generally known as
-                        "priviledge escalation" -- meaning we were able to trick the
+                        "privilege escalation" -- meaning we were able to trick the
                         application into thinking we have permissions (and the application
                         never double-checks).
                     </p>
