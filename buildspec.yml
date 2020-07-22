@@ -1,9 +1,15 @@
 version: 0.2
 
+environment_variables:
+  plaintext:
+    S3_BUCKET: "cyberscavengerhunt.com"
 phases:
   build:
     commands:
        - npm i && yarn build
+  post_build:
+    commands:
+      - aws s3 rm s3://${S3_BUCKET} --recursive
 artifacts:
     files:
         - "**/*"
