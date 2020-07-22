@@ -5,7 +5,7 @@ Disallow: /admin
 # CONGRATULATIONS! You found the 1st of 8 easter eggs in our scavenger hunt!
 #
 # As a penetration tester, the first thing I want to know about your 
-# website/application is what you don’t want Google to know.
+# website/application is what you don't want Google to know.
 # 
 # Do you notice a page in the "Disallow" block above? It's not linked from 
 # anywhere on the website, so you wouldn't have found it if the developer 
