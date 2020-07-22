@@ -166,7 +166,7 @@ class Admin extends React.Component {
                     </p>
 
                     <p>
-                        Once an attacker escalates their priviledges, they'll immediately begin
+                        Once an attacker escalates their privileges, they'll immediately begin
                         looking for <a href="/hidden.html">other pages</a> in
                         the application they hadn't known about.
                     </p>
