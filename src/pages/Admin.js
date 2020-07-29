@@ -85,17 +85,6 @@ class Admin extends React.Component {
                         Hint #2
                     </button>
 
-                    <button
-                        className="btn btn-primary m-3"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#hint3"
-                        aria-expanded="false"
-                        aria-controls="hint3"
-                    >
-                        Hint #3
-                    </button>
-
                     <div className="collapse" id="hint1">
                         <div className="card card-body m-3">
                             <h4 className="card-title">Hint #1</h4>
@@ -119,16 +108,6 @@ class Admin extends React.Component {
 
                             <p className="card-text">
                                 Once you have DevTools open in your browser, look for the JavaScript console...
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="collapse" id="hint3">
-                        <div className="card card-body m-3">
-                            <h4 className="card-title">Hint #3</h4>
-
-                            <p className="card-text">
-                                <img src="/egg3-console.png" alt="Can you find the JS console?" />
                             </p>
                         </div>
                     </div>
